@@ -19,7 +19,7 @@ export const Content = styled.div`
 
     button {
       width: 100%;
-      background-color: #04d361;
+      background-color: #d41308;
       color: white;
       padding: 14px 20px;
       margin: 8px 0;
@@ -29,7 +29,15 @@ export const Content = styled.div`
       transition: background-color 0.2s;
 
       &:hover {
-        background: ${shade(0.2, '#04d301')};
+        background: ${shade(0.2, '#d41308')};
+      }
+    }
+
+    > button {
+      background-color: #04d361;
+
+      &:hover {
+        background: ${shade(0.2, '#04d361')};
       }
     }
   }

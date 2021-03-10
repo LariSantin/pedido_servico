@@ -6,6 +6,7 @@ import api from '../../services/api';
 
 import { Container, Content, Background, Title } from './style';
 import Input from '../../components/input';
+import { Link } from 'react-router-dom';
 
 const PedidoServico: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
@@ -42,6 +43,9 @@ const PedidoServico: React.FC = () => {
                 placeholder="quantidade hora"
               />           
             <button type="submit">Salvar</button>
+            <Link to="/">
+              <button>Voltar</button>
+            </Link>
           </Form>
       </Content>
       <Background />
